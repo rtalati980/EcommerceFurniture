@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Grid Example</title>
+  <style>
+    .lst {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 10px;
+      /* Additional styling for demonstration purposes */
+     /* padding: 20px;
+      border: 1px solid #ccc;*/
+    }
+
+    /* Media query for screens with a width of 600 pixels or less */
+    @media only screen and (max-width: 600px) {
+      .lst {
+        grid-template-columns: auto; /* Change to a single column layout */
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="lst">
+  <div>Content 1</div>
+  <div>Content 2</div>
+  <div>Content 3</div>
+  <div>Content 4</div>
+</div>
+
+</body>
+</html>
